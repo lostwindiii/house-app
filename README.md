@@ -1,10 +1,10 @@
 # 项目名：房我行
 ## 查看步骤 
- - 下载：git clone https://github.com/woxiaofan/Room.git
- - 进入目录：cd Room
+ - 下载：git clone https://github.com/lostwindiii/house-app
+ - 进入目录：cd house-app
  - 安装依赖：npm install
  - 启动项目：node app.js
- - 访问：http://127.0.0.1:16909
+ - 访问：http://127.0.0.1:16908
 
 ## 公司信息：
 <meta name="keywords" content="杭州赛技网络科技有限公司" />
