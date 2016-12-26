@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Administrator on 2016/12/8.
  */
 //引入gulp模块
@@ -32,7 +32,7 @@ gulp.task('uglify',function () {
 gulp.task('nodemon',function (nm) {
     var flag = false;
     return nodemon({
-        script:'./app.js'
+        script:'./server.js'
     }).on('start',function () {
         if(!flag){
             nm();
