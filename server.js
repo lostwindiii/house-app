@@ -9,7 +9,7 @@ var express = require('express');
 var proxy = require('http-proxy-middleware');
 //实例化express
 var app = express();
-//安装 sha1加密
+/*//安装 sha1加密
 var sha1 = require('sha1');
 app.use('/weixin',function (req,res) {
    var obj = req.query;
@@ -24,7 +24,7 @@ app.use('/weixin',function (req,res) {
    }else{
        res.send('验证失败').end();
    }
-});
+});*/
 app.use('/api',proxy({
     target:'http://122.10.30.153:9901',
     pathRewrite:{
@@ -47,7 +47,7 @@ app.use('/api',proxy({
 app.use('/',express.static(path.join(__dirname,'views')));
 app.use('/public',express.static(path.join(__dirname,'public')));
 //指定端口号，建议3000以上,回调函数可以不写
-app.listen(16909,function (){
+app.listen(16908,function (){
     console.log('server run at port 16909')
 });
 
